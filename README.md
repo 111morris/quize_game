@@ -1,6 +1,5 @@
 # alarm-clock
-Title : 
- This is what i changed 
-hello there name is morris
+Title: Quiz game 
 
-this is my second try 
+hope you will enjoy the game 
+try to get 100% I believe in you 
