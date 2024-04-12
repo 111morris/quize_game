@@ -20,7 +20,14 @@ if answer.lower() == "central processing unit":
  print("\n\n")
 elif answer.lower() == "quite":
  print("\n\n")
+ print("so sad to see you leave :( ")
  quit()
+elif answer.lower() == "q":
+ print("\n\n")
+ print("so sad to see you leave :( ")
+ quit()
+
+
 else:
  print("incorect!")
  print("\n\n")
@@ -34,7 +41,14 @@ if answer.lower() == "graphics processing unit":
  print("\n\n")
 elif answer.lower() == "quite":
  print("\n\n")
+ print("so sad to see you leave :( ")
  quit()
+elif answer.lower() == "q":
+ print("\n\n")
+ print("so sad to see you leave :( ")
+ quit()
+
+
 else:
  print("incorect!")
  print("\n\n")
@@ -48,7 +62,14 @@ if answer.lower() == "random access memory":
  print("\n\n")
 elif answer.lower() == "quite":
  print("\n\n")
+ print("so sad to see you leave :( ")
  quit()
+elif answer.lower() == "q":
+ print("\n\n")
+ print("so sad to see you leave :( ")
+ quit()
+
+
 else:
  print("incorect!")
  print("\n\n")
@@ -61,7 +82,14 @@ if answer.lower() == "uninterruptable power supply":
  print("\n\n")
 elif answer.lower() == "quite":
  print("\n\n")
+ print("so sad to see you leave :( ")
  quit()
+elif answer.lower() == "q":
+ print("\n\n")
+ print("so sad to see you leave :( ")
+ quit()
+
+
 else:
  print("incorect!")
  print("\n\n")
@@ -74,7 +102,14 @@ if answer.lower() == "kirinyaga university":
  print("\n\n")
 elif answer.lower() == "quite":
  print("\n\n")
+ print("so sad to see you leave :( ")
  quit()
+elif answer.lower() == "q":
+ print("\n\n")
+ print("so sad to see you leave :( ")
+ quit()
+
+
 else:
  print("incorect!")
  print("\n\n")
@@ -89,7 +124,14 @@ if answer.lower() == "university of nairobi":
  print("\n\n")
 elif answer.lower() == "quite":
  print("\n\n")
+ print("so sad to see you leave :( ")
  quit()
+elif answer.lower() == "q":
+ print("\n\n")
+ print("so sad to see you leave :( ")
+ quit()
+
+
 else:
  print("incorect!")
  print("\n\n")
@@ -104,7 +146,35 @@ if answer.lower() == "technical university of mombasa":
  print("\n\n")
 elif answer.lower() == "quite":
  print("\n\n")
+ print("so sad to see you leave :( ")
  quit()
+elif answer.lower() == "q":
+ print("\n\n")
+ print("so sad to see you leave :( ")
+ quit()
+
+
+else:
+ print("incorect!")
+ print("\n\n")
+ 
+ 
+ # ============= question seven===========
+answer = input("Who is 'mtoza ushuru' in Kenya? ")
+if answer.lower() == "ruto":
+ print("correct!")
+ score +1
+ print("\n\n")
+elif answer.lower() == "quite":
+ print("\n\n")
+ print("so sad to see you leave :( ")
+ quit()
+elif answer.lower() == "q":
+ print("\n\n")
+ print("so sad to see you leave :( ")
+ quit()
+
+
 else:
  print("incorect!")
  print("\n\n")
