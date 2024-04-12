@@ -159,7 +159,7 @@ else:
  print("\n\n")
  
  
- # ============= question eight===========
+ # ============= question 8===========
 answer = input("Who is 'mtoza ushuru' in Kenya? ")
 if answer.lower() == "ruto":
  print("correct!")
