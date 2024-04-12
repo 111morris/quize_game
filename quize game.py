@@ -159,7 +159,7 @@ else:
  print("\n\n")
  
  
- # ============= question seven===========
+ # ============= question eight===========
 answer = input("Who is 'mtoza ushuru' in Kenya? ")
 if answer.lower() == "ruto":
  print("correct!")
@@ -179,5 +179,5 @@ else:
  print("incorect!")
  print("\n\n")
  
-print("you have got " + str(round((score/7)*100)) + "% of the questions correctly!" )
+print("you have got " + str(round((score/8)*100)) + "% of the questions correctly!" )
  
