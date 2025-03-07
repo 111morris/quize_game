@@ -1,4 +1,4 @@
-# alarm-clock
+# quize-game
 Title: Quiz game 
 
 hope you will enjoy the game 
