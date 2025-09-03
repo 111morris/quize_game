@@ -163,7 +163,7 @@ else:
 answer = input("Who is 'mtoza ushuru' in Kenya? ")
 if answer.lower() == "ruto":
  print("correct!")
- score +1
+ score +=1
  print("\n\n")
 elif answer.lower() == "quite":
  print("\n\n")
