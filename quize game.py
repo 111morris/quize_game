@@ -1,183 +1,44 @@
-print("\n")
-print("Welcome to my computer quize")
+print("Welcome to the Computer Quiz!\n")
+playing = input("Do you want to play the quiz game? (yes/no) ").strip().lower()
+if playing != "yes":
+    print("Thanks for your time.")
+    quit()
 
+print("\nOkay! Let's play.")
+print('If you want to quit the game, type "quit" or "q" at any time.\n')
 
-print("\n\n")
-playing = input("Do you want to play the Quize game? ")
-print("\n")
-if playing.lower() != "yes":
- print("Thanks for your time.")
- quit()
-print("Okey! Let's play.\n\nIf you want to quite the game type \"quite\n\n")
-score=0
+questions = [
+    {"question": "What does CPU stand for?", "answer": "central processing unit"},
+    {"question": "What does GPU stand for?", "answer": "graphics processing unit"},
+    {"question": "What does RAM stand for?", "answer": "random access memory"},
+    {"question": "What does UPS stand for?", "answer": "uninterruptable power supply"},
+    {"question": "What does KyU stand for?", "answer": "kirinyaga university"},
+    {"question": "What does UoN stand for?", "answer": "university of nairobi"},
+    {"question": "The meaning of TUM?", "answer": "technical university of mombasa"},
+    {"question": "Who is 'mtoza ushuru' in Kenya?", "answer": "ruto"},
+]
 
-# ============= question one===========
+score = 0
 
-answer = input("what does CPU stand for? ")
-if answer.lower() == "central processing unit":
- print("Correct!")
- score +=1
- print("\n\n")
-elif answer.lower() == "quite":
- print("\n\n")
- print("so sad to see you leave :( ")
- quit()
-elif answer.lower() == "q":
- print("\n\n")
- print("so sad to see you leave :( ")
- quit()
+for q in questions:
+    answer = input(q["question"] + " ").strip().lower()
+    if answer in ["quit", "q"]:
+        print("So sad to see you leave :(")
+        quit()
+    elif answer == q["answer"]:
+        print("Correct!\n")
+        score += 1
+    else:
+        print("Incorrect!\n")
 
+percent = round((score / len(questions)) * 100)
+print(f"You got {score}/{len(questions)} correct. That's {percent}%.")
 
+if percent == 100:
+    print("Excellent work!")
+elif percent >= 70:
+    print("Good job!")
+elif percent >= 50:
+    print("Not bad, but you can do better.")
 else:
- print("incorect!")
- print("\n\n")
-
-# ============= question two===========
-
-answer = input("What does GPU stands for? ")
-if answer.lower() == "graphics processing unit":
- print("Correct!")
- score +=1
- print("\n\n")
-elif answer.lower() == "quite":
- print("\n\n")
- print("so sad to see you leave :( ")
- quit()
-elif answer.lower() == "q":
- print("\n\n")
- print("so sad to see you leave :( ")
- quit()
-
-
-else:
- print("incorect!")
- print("\n\n")
-
-# ============= question three===========
-
-answer = input("What does RAM stands for? ")
-if answer.lower() == "random access memory":
- print("Correct!")
- score +=1
- print("\n\n")
-elif answer.lower() == "quite":
- print("\n\n")
- print("so sad to see you leave :( ")
- quit()
-elif answer.lower() == "q":
- print("\n\n")
- print("so sad to see you leave :( ")
- quit()
-
-
-else:
- print("incorect!")
- print("\n\n")
-
-# ============= question four===========
-answer = input("What does UPS stands for? ")
-if answer.lower() == "uninterruptable power supply":
- print("Correct!")
- score +=1
- print("\n\n")
-elif answer.lower() == "quite":
- print("\n\n")
- print("so sad to see you leave :( ")
- quit()
-elif answer.lower() == "q":
- print("\n\n")
- print("so sad to see you leave :( ")
- quit()
-
-
-else:
- print("incorect!")
- print("\n\n")
-
-# ============= question five===========
-answer = input("What does KyU stands for? ")
-if answer.lower() == "kirinyaga university":
- print("Correct!")
- score +=1
- print("\n\n")
-elif answer.lower() == "quite":
- print("\n\n")
- print("so sad to see you leave :( ")
- quit()
-elif answer.lower() == "q":
- print("\n\n")
- print("so sad to see you leave :( ")
- quit()
-
-
-else:
- print("incorect!")
- print("\n\n")
-
-
-# ============= question six===========
-
-answer = input("what does UoN stands for? ")
-if answer.lower() == "university of nairobi":
- print("Correct!")
- score +=1
- print("\n\n")
-elif answer.lower() == "quite":
- print("\n\n")
- print("so sad to see you leave :( ")
- quit()
-elif answer.lower() == "q":
- print("\n\n")
- print("so sad to see you leave :( ")
- quit()
-
-
-else:
- print("incorect!")
- print("\n\n")
-
-
-
-# ============= question seven===========
-answer = input("The meaning of TUM? ")
-if answer.lower() == "technical university of mombasa":
- print("correct!")
- score +1
- print("\n\n")
-elif answer.lower() == "quite":
- print("\n\n")
- print("so sad to see you leave :( ")
- quit()
-elif answer.lower() == "q":
- print("\n\n")
- print("so sad to see you leave :( ")
- quit()
-
-
-else:
- print("incorect!")
- print("\n\n")
- 
- 
- # ============= question eight===========
-answer = input("Who is 'mtoza ushuru' in Kenya? ")
-if answer.lower() == "ruto":
- print("correct!")
- score +=1
- print("\n\n")
-elif answer.lower() == "quite":
- print("\n\n")
- print("so sad to see you leave :( ")
- quit()
-elif answer.lower() == "q":
- print("\n\n")
- print("so sad to see you leave :( ")
- quit()
-
-
-else:
- print("incorect!")
- print("\n\n")
- 
-print("you have got " + str(round((score/8)*100)) + "% of the questions correctly!" )
- 
+    print("Better luck next time!")
