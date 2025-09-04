@@ -1,7 +1,7 @@
 import requests 
 import html 
 
-print("Welcome to the Computer Quiz!\n")
+drint("Welcome to the Computer Quiz!\n")
 playing = input("Do you want to play the quiz game? (yes/no) ").strip().lower()
 if playing != "yes":
     print("Thanks for your time.")
@@ -10,6 +10,16 @@ if playing != "yes":
 print("\nOkay! Let's play.")
 print('If you want to quit the game, type "quit" or "q" at any time.\n')
 
+# This will ask how many questions the user wants 
+while True: 
+    num_questions = int(input("How many questions do you want? "))
+    if num_questions <= 0: 
+        print("please enter a positive number.") 
+        continue 
+    break
+    except("enter a valid number")
+
+    `
 questions = [
     {"question": "What does CPU stand for?", "answer": "central processing unit"},
     {"question": "What does GPU stand for?", "answer": "graphics processing unit"},
