@@ -1,3 +1,6 @@
+import requests 
+import html 
+
 print("Welcome to the Computer Quiz!\n")
 playing = input("Do you want to play the quiz game? (yes/no) ").strip().lower()
 if playing != "yes":
