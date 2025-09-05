@@ -55,3 +55,8 @@ elif percent >= 50:
     print("Not bad, but you can do better.")
 else:
     print("Better luck next time!")
+
+
+def printline() {
+ print("hello")
+}
