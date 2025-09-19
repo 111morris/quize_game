@@ -31,7 +31,7 @@ questions = [
     {"question": "Who is 'mtoza ushuru' in Kenya?", "answer": "ruto"},
 ]
 
-score = 0
+score = 10
 
 for q in questions:
     answer = input(q["question"] + " ").strip().lower()
