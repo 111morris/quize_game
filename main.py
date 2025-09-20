@@ -17,7 +17,7 @@ while True:
         print("please enter a positive number.") 
         continue 
     break
-    except("enter a valid number")
+    except("enter a number: ")
 
     `
 questions = [
