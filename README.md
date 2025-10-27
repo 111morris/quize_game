@@ -173,5 +173,5 @@ requests>=2.30.0
 ##  Author
 
 Morris Mulandi
- Email: [your.email@example.com](mailto:mulandimorris1@gmail.com)  
- GitHub: [your-username](https://github.com/111morris)
+ Email: [mulandimorris1@gmail.com](mailto:mulandimorris1@gmail.com)  
+ GitHub: [111morris](https://github.com/111morris)
